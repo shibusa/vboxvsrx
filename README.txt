@@ -1,7 +1,7 @@
 Based off of https://www.youtube.com/watch?v=SLU9DBj_zt0 for creating a vSRX lab machine in VirtualBox.  This automates the post Virtual Machine creation procedures.  Does the following:
 - enable I/O APIC
 - set CPUs to required min of 2
-- set memory to required min of 2GB
+- set memory to required min of 4GB
 - enable PAE/NX
 - disable audio
 - enable serial
