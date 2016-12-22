@@ -11,7 +11,7 @@ fi
 # tar -xvf *.ova
 
 ####Main configs in 1 line, set bridge adapter interface
-VBoxManage modifyvm "$1" --ioapic on --cpus 2 --memory 2048 --pae on --audio none --uart1 0x3F8 4 --nic1 bridged --nictype1 virtio --nic2 intnet --intnet2  "intnet" --nictype2 virtio --nic3 intnet --intnet3  "intnet" --nictype3 virtio --nic4 intnet --intnet4  "intnet" --nictype4 virtio --nic5 intnet --intnet5  "intnet" --nictype5 virtio --nic6 intnet --intnet6  "intnet" --nictype6 virtio --nic7 intnet --intnet7  "intnet" --nictype7 virtio --nic8 intnet --intnet8  "intnet" --nictype8 virtio
+VBoxManage modifyvm "$1" --ioapic on --cpus 2 --memory 4096 --pae on --audio none --uart1 0x3F8 4 --nic1 bridged --nictype1 virtio --nic2 intnet --intnet2  "intnet" --nictype2 virtio --nic3 intnet --intnet3  "intnet" --nictype3 virtio --nic4 intnet --intnet4  "intnet" --nictype4 virtio --nic5 intnet --intnet5  "intnet" --nictype5 virtio --nic6 intnet --intnet6  "intnet" --nictype6 virtio --nic7 intnet --intnet7  "intnet" --nictype7 virtio --nic8 intnet --intnet8  "intnet" --nictype8 virtio
 VBoxManage modifyvm "$1" --bridgeadapter1 $2
 echo -e "$1 set up complete."
 
