@@ -24,4 +24,4 @@ chmod +x vsrxinit.sh
 2. Run script with following format
 ```
 ./vsrxinit.sh {VM Name} {Host Interface Name}
-``
+```
